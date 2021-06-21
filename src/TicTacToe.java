@@ -35,7 +35,7 @@ public class TicTacToe {
         }
 
         if (!gameField[inX][inY].equals("-")) {
-            return"Cell " + x + ", " + y + " is already occupied";
+            return "Cell " + x + ", " + y + " is already occupied";
         }
 
         String res = "Move completed";
