@@ -18,8 +18,86 @@ public class MainClass {
 //        int[] arr = a.resize();
 //        System.out.println(Arrays.toString(arr));
 
-        Mage a1 = new Mage("a", 10, 10,"earth");
-        Mage b1 = new Mage("b", 12, 10,"earth");
-        a1.fight(b1);
+//        Mage a1 = new Mage("a", 10, 10,"earth");
+//        Mage b1 = new Mage("b", 12, 10,"earth");
+//        a1.fight(b1);
+
+
+//        New game
+//        makeMove(1, 1)
+//        makeMove(1, 1)
+//        makeMove(1, 2)
+//        makeMove(2, 2)
+//        makeMove(3, 1)
+//        makeMove(3, 3)
+//        makeMove(2, 1)
+//        E.
+//                New game
+//        makeMove(1, 1)
+//        makeMove(3, 3)
+//        makeMove(1, 2)
+//        makeMove(3, 2)
+//        makeMove(2, 2)
+//        makeMove(3, 1)
+//                .
+//                New game
+//        makeMove(2, 2)
+//        makeMove(3, 1)
+//        makeMove(3, 2)
+//        makeMove(2, 1)
+//        makeMove(1, 2)
+//                .
+//                New game
+//        makeMove(1, 1)
+//        makeMove(2, 2)
+//        makeMove(1, 2)
+//        makeMove(1, 3)
+//        makeMove(2, 1)
+//        makeMove(3, 1)
+//                .
+//                New game
+//        makeMove(2, 2)
+//        makeMove(1, 1)
+//        makeMove(3, 1)
+//        makeMove(1, 3)
+//        makeMove(1, 2)
+//        makeMove(3, 2)
+//        makeMove(2, 1)
+//        makeMove(2, 3)
+//        makeMove(3, 3)
+//        makeMove(1, 1)
+
+
+        TicTacToe board = new TicTacToe();
+        System.out.println(board.makeMove(1, 1));
+        System.out.println(board.makeMove(1, 1));
+        System.out.println(board.makeMove(1, 2));
+        System.out.println(board.makeMove(2, 1));
+        System.out.println(board.makeMove(2, 2));
+        System.out.println(board.makeMove(3, 1));
+        System.out.println(board.makeMove(2, 2));
+        String[][] field = board.getField();
+        for (int i = 0; i < field.length; i++) {
+            System.out.println(Arrays.toString(field[i]));
+        }
+
+        System.out.println("--------------------------");
+        board.newGame();
+        System.out.println(board.makeMove(1, 1));
+        System.out.println(board.makeMove(1, 3));
+        System.out.println(board.makeMove(1, 2));
+        System.out.println(board.makeMove(2, 1));
+        System.out.println(board.makeMove(2, 3));
+        System.out.println(board.makeMove(2, 2));
+        System.out.println(board.makeMove(3, 1));
+        System.out.println(board.makeMove(3, 2));
+        System.out.println(board.makeMove(3, 3));
+        System.out.println(board.makeMove(3, 3));
+
+        field = board.getField();
+        for (int i = 0; i < field.length; i++) {
+            System.out.println(Arrays.toString(field[i]));
+        }
+
     }
 }
