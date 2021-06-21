@@ -14,8 +14,12 @@ public class MainClass {
 //        }
 //        System.out.print("]");
 
-        ToLine a = new ToLine(new int[][] {{1, 2}, {3, 4}, {5, 6}});
-        int[] arr = a.resize();
-        System.out.println(Arrays.toString(arr));
+//        ToLine a = new ToLine(new int[][] {{1, 2}, {3, 4}, {5, 6}});
+//        int[] arr = a.resize();
+//        System.out.println(Arrays.toString(arr));
+
+        Mage a1 = new Mage("a", 10, 10,"earth");
+        Mage b1 = new Mage("b", 12, 10,"earth");
+        a1.fight(b1);
     }
 }
